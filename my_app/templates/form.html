@@ -1,0 +1,10 @@
+<p>Enter a sentence:</p>
+
+<form action="" method="post">
+    <input type="text" name="sentence" />
+    <input type="submit" value="Process">
+</form>
+<br />
+{% if sentence %}
+<p>{{ sentence }} : {{ predict[0] }}</p>
+{% endif %}

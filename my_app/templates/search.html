@@ -1,0 +1,13 @@
+<p>Enter a Keyword:</p>
+
+<form action="" method="post">
+    <input type="text" name="q" />
+    <input type="submit" value="Process">
+</form>
+<br />
+<h3>Searching for {{ q }}</h3>
+<ul>
+{% for s in statuses %}
+    <li>{{ s.text }}</li>
+{% endfor %}
+</ul>
